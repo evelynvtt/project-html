@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.head{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(60,179,113,0.5),rgba(60,179,113,0.5)),
+  url("https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=2000&t=st=1666622172~exp=1666622772~hmac=5c04564bdd6b3e5f6717babdce72e550e75ab2431c0b28c38fb7bb6bc5af0cff");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+nav{
+
+      display: flex;
+      padding: "2% 6%";  /* ->wo schildkröte chillt*/
+      justify-content: space-between;
+      align-items: center;
+
+}
+nav img{
+
+  width: "150px"; /*wie groß bild von schildi ist*/
+
+}
+.nav-links{
+
+  flex: 1;
+  text-align: center;
+
+}
+.nav-links ul li{
+
+  list-style: none;
+  display: inline-block;
+  padding: 12px 16px;
+  position: relative;
+}
+.nav-links ul li a{
+
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+
+}
+.nav-links ul li::after{
+
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #405d27;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+  width: 100%;
+}
+.text-box{
+      width: 90%;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-align: center;
+}
+.text-box h1{
+      font-size: 62px;
+}
+.text.box p{
+      margin: 10px 0 40px;
+      font-size: 14px;
+      color: #fff;
+}
+.block{
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 15px 34px;
+      font-size: 13px;
+      background: transparent;
+      position: relative;
+      cursor: pointer;
+}
