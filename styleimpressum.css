@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap');
+
+
+:root {
+  --hell: rgb(213, 228, 235);
+  --dunkel: rgb(21, 24, 65);
+}
+
+body {
+  margin: 0;
+  background: #eeeeee;
+  font-family: Montserrat;
+}
+
+header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  font-weight: 500;
+
+  /* Das ist dafür, dass die Navigation jederzeit anklickbar ist */
+  z-index: 99;
+}
+
+footer,
+nav {
+  backdrop-filter: blur(8px);
+}
+
+.teaser {
+  width: 100%;
+  height: 300px;
+}
+
+@media screen and (min-width: 800px) {
+  .teaser {
+    height: 600px;
+  }
+}
+
+.teaser img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+footer ul,
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer ul li,
+nav ul li {
+  padding: 16px;
+}
+
+
+.mitte {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  box-sizing: border-box;
+
+  /* Das ist dafür, dass die Überschrift nicht hinter dem verschwomennen Bereich ist */
+  padding-top: 48px;
+  transform: translateY(-48px);
+}
+
+
