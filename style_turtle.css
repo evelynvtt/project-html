@@ -120,6 +120,7 @@ nav img{
       margin: auto;
       text-align: center;
       padding-top: 150px;
+
 }
 h1{
       font-size: 36px;
@@ -144,6 +145,12 @@ p1{
   margin-bottom: 5%;
   padding: 10px 12px;
   box-sizing: border-box;
+  transition: 0.7s;
+}
+
+.produktreihe:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(0px, -8px);
 }
 .reihe2{
   margin-top: 5%;
@@ -157,4 +164,9 @@ p1{
   margin-bottom: 5%;
   padding: 10px 12px;
   box-sizing: border-box;
+  transition: 0.7s;
+}
+.produktreihe2:hover{
+  box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.3);
+  transform: translate(0px, -8px);
 }
