@@ -1,120 +1,230 @@
+:root{
+    color: purple;
+}
+
 *{
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
 }
 
-.head{
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgb(191,64,191,0.4),rgb(191,64,191,0.4)),
-  url("https://img.freepik.com/free-vector/man-work-with-computer-office-with-future-city-landscape-window-vector-cartoon-illustration-futuristic-cityscape-with-neon-buildings-road-night_107791-10399.jpg?w=1800&t=st=1666682648~exp=1666683248~hmac=302ed333b7e059e84034f7695c7f3e21f84ef5a2819d8b6aa126d724f582c1a9");
-
-  /*url("https://img.freepik.com/free-vector/white-gray-geometric-pattern-background-vector_53876-136510.jpg?w=2000&t=st=1666622172~exp=1666622772~hmac=5c04564bdd6b3e5f6717babdce72e550e75ab2431c0b28c38fb7bb6bc5af0cff");
-  */
-
-
-  /* versteh ich nich aber anscheinend für hover effects
-  
-  .hvr-grow {
-      display: inline-block;
-      vertical-align: middle;
-      transform: translateZ(0);
-      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-      backface-visibility: hidden;
-      -moz-osx-font-smoothing: grayscale;
-      transition-duration: 0.3s;
-      transition-property: transform;
-  }
-
-  .hvr-grow:hover,
-  .hvr-grow:focus,
-  .hvr-grow:active {
-      transform: scale(1.1);
-  }
-*/
-  background-position: center;
-  background-size: cover;
-  position: relative;
-
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
 }
-nav{
 
-      display: flex;
-      padding: "2% 6%";  /* ->wo schildkröte chillt*/
-      justify-content: space-between;
-      align-items: center;
-
+section{
+    padding:2rem 9%;
 }
-nav img{
 
-  /*width: "150px";*/ /*wie groß bild von schildi ist*/
-
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: #333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(204, 51, 255,.08);
 }
-.pic{
+
+.heading span{
+    color: purple;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: purple;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+    transition: 0.5s;
+}
+header .navbar a:hover{
+    color: purple;
+    width: 100%;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:url(../images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color:#333;
+}
+
+.home .content span{
+    font-size: 3.5rem;
+    color:var(--pink);
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:1rem 0;
+    line-height: 1.5;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+}
+
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+
+.about .row .video-container video{
+    width:100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+
+.about .row .video-container h3{
     position: absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background:#fff;
+    width:100%;
+    padding:1rem 2rem;
+    text-align: center;
+    mix-blend-mode: screen;
 }
 
+.about .row .content{
+    flex:1 1 40rem;
+}
 
-.nav-links{
+.about .row .content h3{
+    font-size: 3rem;
+    color:#333;
+}
 
-  flex: 1;
-  text-align: center;
+.about .row .content p{
+    font-size: 1.5rem;
+    color:#999;
+    padding:.5rem 0;
+    padding-top: 1rem;
+    line-height: 1.5;
+}
 
+.icons-container{
+    background:#eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
-.nav-links ul li{
 
-  list-style: none;
-  display: inline-block;
-  padding: 12px 16px;
-  position: relative;
+.icons-container .icons{
+    background:#fff;
+    border:.1rem solid rgba(0,0,0,.1);
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    flex:1 1 25rem;
 }
-.nav-links ul li a{
-  color: #fff;
-  text-decoration: none;
-  font-size: 13px;
-}
-.nav-links ul li::after{
 
-  content: '';
-  width: 0%;
-  height: 2px;
-  background: #fff;
-  display: block;
-  margin: auto;
-  transition: 0.5s;
+.icons-container .icons img{
+    height:5rem;
+    margin-right: 2rem;
 }
-.nav-links ul li:hover::after{
-  width: 100%;
+
+.icons-container .icons h3{
+    color:#333;
+    padding-bottom: .5rem;
+    font-size: 1rem;
 }
-.text-box{
-      width: 90%;
-      color: #fff;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      text-align: center;
+
+.icons-container .icons span{
+    color:#555;
+    font-size: 1.3rem;
 }
-.text-box h1{
-      font-size: 62px;
-}
-.text.box p{
-      margin: 10px 0 40px;
-      font-size: 14px;
-      color: #fff;
-}
-.block{
-      display: inline-block;
-      text-decoration: none;
-      color: #fff;
-      border: 1px solid #fff;
-      padding: 15px 34px;
-      font-size: 13px;
-      background: transparent;
-      position: relative;
-      cursor: pointer;
-}
+
 .produkte{
       width: 90%;
       margin: auto;
