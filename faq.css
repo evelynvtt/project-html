@@ -4,9 +4,113 @@ body{
    background: #eeeeee;
 }
 
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    padding:1rem;
+    margin:2rem 0;
+    background:rgba(204, 51, 255,.08);
+}
+
+.heading span{
+    color: purple;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background:#333;
+    color:#fff;
+    padding:.9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: purple;
+}
+
+header{
+    position: fixed;
+    top:0; left:0; right:0;
+    background:#fff;
+    padding:2rem 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+
+header .logo span{
+    color:var(--pink);
+}
+
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+    transition: 0.5s;
+}
+header .navbar a:hover{
+    color: purple;
+    width: 100%;
+}
+
+header .icons a{
+    font-size: 2.5rem;
+    color:#333;
+    margin-left: 1.5rem;
+}
+
+header .icons a:hover{
+    color:var(--pink);
+}
+
+header #toggler{
+    display: none;
+}
+
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .box{
-   width: 320px;
-   margin: 100px auto;
+   width: 800px;
+   margin: 300px auto;
    background: #fff;
    border-radius: 7px;
    box-shadow: 1px 2px 4px rgba(0,0,0,.3);
@@ -20,7 +124,7 @@ body{
    text-align: center;
    font-family: "Montserrat";
 }
-
+ 
 .faqs{
    padding: 0px 20px 20px;
 }
