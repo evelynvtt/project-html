@@ -1,34 +1,48 @@
- <!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>Turtle | Login</title>
-		<!--- fonts --->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style.css">
-	</head>
-<body> 
-	<div class="center">
-	<h1>Login</h1>
-	<form method="post">
-		<div class="txt_field">
-			<input type="text" required> <!--Username Eingabefeld-->
-			<span></span>
-			<label>Benutzername</label>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Turtle | Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<section class="oben">
+	<div class="container">
+		<div class="img">
+			<img src="turtle.png">
 		</div>
-		<div class="txt_field">
-			<input type="password" required> <!--Passwort Eingabefeld-->
-			<span></span>
-			<label>Passwort</label>
-		</div>
-		<div class="pass">Passwort vergessen?</div>
-		<input type="submit" value="Login">
-		<div class="signup_link">
-			Noch kein Mitglied? <br>
-			<a href="#">Konto erstellen</a>
-		</div>
-	</form>
+		<div class="login-content">
+			<form action="">
+				<img src="login_logo.jpg">
+				<h2 class="title">Konto</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Benutzername</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Kennwort</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Kennwort vergessen?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+	</section>
 </body>
-</html> 
+
+
+</html>
