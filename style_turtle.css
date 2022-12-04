@@ -1,5 +1,5 @@
 :root{
-    color: purple;
+    color: #88888;
 }
 
 *{
@@ -520,6 +520,51 @@ button{
   color: #24262b;
   background-color: rgba(246, 226, 255, 0.8);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.impressum{
+  font-size: 2rem;
+  text-align: left;
+  padding-left: 10%;
+  color: #88888;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(min-width:1px) {
   .abc{
