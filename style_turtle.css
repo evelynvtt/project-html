@@ -798,14 +798,31 @@ details summary{
   color: #24262b;
   background-color: rgba(246, 226, 255, 0.8);
 }
-.impressum{
-  font-size: 2rem;
+.impressum p {
+  font-size: 15px;
   text-align: left;
-  padding-left: 10%;
-  color: #88888;
+  padding-top: 0 8px;
+  color: #000D00;
 }
-
-
+.impressum p1 {
+  text-align: left;
+  color: #696969;
+  font-size: 16px;
+  padding-top: 0 8px;
+}
+.impressum h1 {
+   text-align: left;
+   font-size: 30px;
+   margin: 0;
+   padding-top: 10px;
+}
+.impressum h2 {
+   text-align: left;
+   font-size: 18px;
+   color: #000D00;
+   margin: 0;
+   padding-top: 10px;
+}
 @media(min-width:1px) {
   .abc{
     width: 40%;
