@@ -1,57 +1,61 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>Produkte</title>
-		<!--- fonts --->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="style_Produkt.css">
 
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>TURTLE</title>
+<!-- funktiioniert hier  -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TURTLE</title>
 
-		<!-- font awesome cdn link  -->
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-		<!-- custom css file link  -->
-		<link rel="stylesheet" href="style_turtle.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style_turtle.css">
+    <script>
+        function myFunction() {
+            var x = document.getElementById("burgerlinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
 
-	</head>
+<!-- header section starts  -->
+
+<header>
+<div class="abc">
+
+<img id="logo" src="images/image.png" alt="">
+    <a href="index.html" class="logo"></a>
 
 
+          <div id="burgerlinks">
+        <ul id="liste">
+      <li id="liste">  <a href="index.html">Startseite</a> </li>
+      <li>  <a href="ueberuns.html">Über Uns</a></li>
+        <li><a href="Produkt.html">Produkte</a></li>
+    <li>    <a href="FAQS.html">FAQ</a></li>
+      <li>  <a href="kontakt.html">Kontakt</a></li>
+      </ul>
+         </div>
+       </div>
+<div class="xyz">
 
-	<body>
-	<section class="hallo">
-		<header>
+        <a href="Loginpage.html"><img id="login" src="images/login_logo.jpg"></a>
+        <a href="javascript:void(0);" onclick="myFunction()"><img id="burger" src="images/menu.png" alt="Auswahlmenü"></a>
 
-		    <input type="checkbox" name="" id="toggler">
-		    <label for="toggler" class="fas fa-bars"></label>
+</div>
 
+</header>
 
+<!-- header section ends -->
 
-
-
-		<img src="images/turtle.png" alt="" height="70px" width="110px">
-		    <a href="index.html" class="logo">Antivirus & Internet <br> Security<span>.</span></a>
-		    <nav class="navbar">
-		        <a href="index.html">Startseite</a>
-		        <a href="ueberuns.html">Über Uns</a>
-		        <a href="Produkt.html">Produkte</a>
-		        <a href="FAQS.html">FAQ</a>
-		        <a href="kontakt.html">Kontakt</a>
-
-		    </nav>
-
-		    <div class="icons">
-		        <a href="index.html" class="fas fa-shopping-cart"></a>
-		        <a href="Loginpage.html" class="fas fa-user"></a>
-		    </div>
-
-		</header>
 		<br>
 		<br>
 		<br>
@@ -60,6 +64,10 @@
 		<br>
 		<br>
 		<br>
+		<br>
+		<br>
+		<br>
+
 
       <section>
 
@@ -68,27 +76,25 @@
 			</section>
 <br>
 <br>
-		<div class="headline">Mit Turtle online sicher durchs Web -<br> für Privatkunden und Unternehmen</div>
-		<br>
-		<br>
-		<br>
-		<br>
-		</div>
-		<div class="headline">Für Privatkunden</div>
-		<div class="gallery">
-					<div class="content">
-	<h3>Basic</h3>
-		<p1>1 Gerät <br>
-		 2-Jahres Abonnement <br>
-		 <br>
-		 Antivirus, Passwort-Manager & <br>
-		 Software Updater<br>
-		<br>
-		</p1>
-		<h6>29,99 € </h6>
-		<p>/Erstes Jahr</p>
-		<br>
-		<p>Verlängert sich automatisch zum Preis von 39,99 € / Zweites Jahr</p>
+<section class="hallo">
+
+<section class="produkt">
+		<div class="headline">Online sicher durchs Web mit Turtle,<br> Für Unternehmen und Privatkunden</div>
+			<div class="galleryp">
+					<div class="contentp">
+
+						<h3>Basic</h3>
+							<p1>1 Gerät <br>
+							 2-Jahres Abonnement <br>
+							 <br>
+							 Antivirus, Passwort-Manager & <br>
+							 Software Updater<br>
+							<br>
+							</p1>
+							<h6>29,99 € </h6>
+							<p>/Erstes Jahr</p>
+							<br>
+							<p>Verlängert sich automatisch zum Preis von 39,99 € / Zweites Jahr</p>
 	<ul>
 		<li><i class="fa fa-star checked"></i></li>
 		<li><i class="fa fa-star checked"></i></li>
@@ -99,17 +105,17 @@
 		<button class="buy-1">Jetzt Kaufen</button>
 					</div>
 
-							<div class="content">
-	<h3>Pro</h3>
-		<p1>5 Geräte <br>
-		 2-Jahres Abonnement <br>
-		 <br>
-		 Premium-Antivirus, Passwort-Manager & Software Updater,<br>
-	     	 und vieles mehr<br></p1>
-		<h6>34,99 € </h6>
-		<p>/Erstes Jahr</p>
-		<br>
-		<p>Verlängert sich automatisch zum Preis von 44,99 € / Zweites Jahr</p>
+							<div class="contentp">
+								<h3>Pro</h3>
+									<p1>5 Geräte <br>
+									 2-Jahres Abonnement <br>
+									 <br>
+									 Premium-Antivirus, Passwort-Manager & Software Updater,<br>
+								     	 und vieles mehr<br></p1>
+									<h6>34,99 € </h6>
+									<p>/Erstes Jahr</p>
+									<br>
+									<p>Verlängert sich automatisch zum Preis von 44,99 € / Zweites Jahr</p>
 	<ul>
 		<li><i class="fa fa-star checked"></i></li>
 		<li><i class="fa fa-star checked"></i></li>
@@ -120,18 +126,18 @@
 	<button class="buy-2">Jetzt Kaufen</button>
 					</div>
 
-										<div class="content">
-	<h3>Expert</h3>
-		<p1>10 Geräte <br>
-		 2-Jahres Abonnement <br>
-		 <br>
-		 Alle Features der Internet Security & Optimierungs-Tools<br>
-		 VIP-Kundendienst <br>
-		</p1>
-		<h6>39,99 € </h6>
-		<p>/Erstes Jahr</p>
-		<br>
-		<p>Verlängert sich automatisch zum Preis von 49,99 € / Zweites Jahr</p>
+										<div class="contentp">
+											<h3>Expert</h3>
+												<p1>10 Geräte <br>
+												 2-Jahres Abonnement <br>
+												 <br>
+												 Alle Features der Internet Security & Optimierungs-Tools<br>
+												 VIP-Kundendienst <br>
+												</p1>
+												<h6>39,99 € </h6>
+												<p>/Erstes Jahr</p>
+												<br>
+												<p>Verlängert sich automatisch zum Preis von 49,99 € / Zweites Jahr</p>
 	<ul>
 		<li><i class="fa fa-star checked"></i></li>
 		<li><i class="fa fa-star checked"></i></li>
@@ -142,31 +148,22 @@
 	<button class="buy-3">Jetzt Kaufen</button>
 					</div>
 					</div>
-					<div> <br>
-						<br>
-						<br>
-					</div>
-					<div class="headline">Für Unternehmen</div>
-					<p><br>
-					<br>
-					  <br>
-					  <br></p>
-							<div class="gallery2">
-								<div class="content2">
+							<div class="gallery2p">
+								<div class="content2p">
 
 
 
-	<h3>Basic</h3>
-		<p1>10 Geräte<br>
-		 2-Jahres Abonnement<br>
-		 <br>
-		 Verwaltungsplattform, Geräteschutz, Datenschutz<br>
-		 Kundendienst <br>
-		</p1>
-		<h6>99,99 € </h6>
-		<p>/Erstes Jahr</p>
-		<br>
-		<p>Verlängert sich automatisch zum Preis von 119,99 € / Zweites Jahr</p>
+									<h3>Basic</h3>
+											<p1>10 Geräte<br>
+											 2-Jahres Abonnement<br>
+											 <br>
+											 Verwaltungsplattform, Geräteschutz, Datenschutz<br>
+											 Kundendienst <br> <br>
+											</p1>
+											<h6>99,99 € </h6>
+											<p>/Erstes Jahr</p>
+											<br>
+											<p>Verlängert sich automatisch zum Preis von 119,99 € / Zweites Jahr</p>
 	<ul>
 		<li><i class="fa fa-star checked"></i></li>
 		<li><i class="fa fa-star checked"></i></li>
@@ -177,18 +174,18 @@
 	<button class="buy-5">Jetzt Kaufen</button>
 					</div>
 
-										<div class="content2">
-	<h3>Pro</h3>
-		<p1>20 Geräte <br>
-		 2-Jahres Abonnement <br>
-		 <br>
-		 Verwaltungsplattform, Hoher Schutz, Integriertes VPN<br>
-		 VIP-Kundendienst <br>
-		</p1>
-		<h6>119,99 € </h6>
-		<p>/Erstes Jahr</p>
-		<br>
-		<p>Verlängert sich automatisch zum Preis von 139,99 € / Zweites Jahr</p>
+										<div class="content2p">
+											<h3>Pro</h3>
+												<p1>20 Geräte <br>
+												 2-Jahres Abonnement <br>
+												 <br>
+												 Verwaltungsplattform, Hoher Schutz, Integriertes VPN<br>
+												 VIP-Kundendienst <br> <br>
+												</p1>
+												<h6>119,99 € </h6>
+												<p>/Erstes Jahr</p>
+												<br>
+												<p>Verlängert sich automatisch zum Preis von 139,99 € / Zweites Jahr</p>
 	<ul>
 		<li><i class="fa fa-star checked"></i></li>
 		<li><i class="fa fa-star checked"></i></li>
@@ -200,18 +197,18 @@
 					</div>
 
 
-										<div class="content2">
-	<h3>Expert</h3>
-		<p1>35 Geräte <br>
-		 2-Jahres Abonnement <br>
-		 <br>
-		 Alle Features der Internet Security & Patch Management<br>
-		 VIP-Kundendienst <br>
-		</p1>
-		<h6>139,99 € </h6>
-		<p>/Erstes Jahr</p>
-		<br>
-		<p>Verlängert sich automatisch zum Preis von 159,99 € / Zweites Jahr</p>
+										<div class="content2p">
+											<h3>Expert</h3>
+												<p1>35 Geräte <br>
+												 2-Jahres Abonnement <br>
+												 <br>
+												 Alle Features der Internet Security & Patch Management<br>
+												 VIP-Kundendienst <br> <br>
+												</p1>
+												<h6>139,99 € </h6>
+												<p>/Erstes Jahr</p>
+												<br>
+												<p>Verlängert sich automatisch zum Preis von 159,99 € / Zweites Jahr</p>
 	<ul>
 		<li><i class="fa fa-star checked"></i></li>
 		<li><i class="fa fa-star checked"></i></li>
@@ -236,8 +233,8 @@
 
 			</div>
 
-
-								</section>
+</section>
+</section>
 		</body>
 
 
