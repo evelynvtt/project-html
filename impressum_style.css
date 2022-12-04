@@ -24,19 +24,17 @@ p1 {text-align: left;
   padding-top: 0 8px;
 }
 
-h1  {
-	text-align: left;
-	font-size: 30px;
-	margin: 0;
-	padding-top: 10px;
+h1  {text-align: left;
+     font-size: 30px;
+     margin: 0;
+     padding-top: 10px;
 }
 
-h2  {
-	text-align: left;
-	font-size: 18px;
-  color: #000D00;
-	margin: 0;
-	padding-top: 10px;
+h2  {text-align: left;
+     font-size: 18px;
+     color: #000D00;
+     margin: 0;
+     padding-top: 10px;
 }
 
 
