@@ -1,4 +1,4 @@
-*{
+.oben{
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -6,10 +6,18 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
-    
+    overflow: hidden;
 }
 
-.oben .container{
+.wave{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+}
+
+.container{
     width: 100vw;
     height: 100vh;
     display: grid;
@@ -18,39 +26,39 @@ body{
     padding: 0 2rem;
 }
 
-.oben .img{
+.img{
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
-.oben .login-content{
+.login-content{
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
 }
 
-.oben .img img{
+.img img{
 	width: 500px;
 }
 
-.oben form{
+form{
 	width: 360px;
 }
 
-.oben .login-content img{
+.login-content img{
     height: 100px;
 }
 
-.oben .login-content h2{
+.login-content h2{
 	margin: 15px 0;
 	color: #333;
 	text-transform: uppercase;
 	font-size: 2.9rem;
 }
 
-.oben .login-content .input-div{
+.login-content .input-div{
 	position: relative;
     display: grid;
     grid-template-columns: 7% 93%;
@@ -59,27 +67,27 @@ body{
     border-bottom: 2px solid #d9d9d9;
 }
 
-.oben .login-content .input-div.one{
+.login-content .input-div.one{
 	margin-top: 0;
 }
 
-.oben .i{
+.i{
 	color: purple;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.oben .i i{
+.i i{
 	transition: .3s;
 }
 
-.oben .input-div > div{
+.input-div > div{
     position: relative;
 	height: 45px;
 }
 
-.oben .input-div > div > h5{
+.input-div > div > h5{
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -89,7 +97,7 @@ body{
 	transition: .3s;
 }
 
-.oben .input-div:before, .input-div:after{
+.input-div:before, .input-div:after{
 	content: '';
 	position: absolute;
 	bottom: -2px;
@@ -99,28 +107,28 @@ body{
 	transition: .4s;
 }
 
-.oben .input-div:before{
+.input-div:before{
 	right: 50%;
 }
 
-.oben .input-div:after{
+.input-div:after{
 	left: 50%;
 }
 
-.oben .input-div.focus:before, .input-div.focus:after{
+.input-div.focus:before, .input-div.focus:after{
 	width: 50%;
 }
 
-.oben .input-div.focus > div > h5{
+.input-div.focus > div > h5{
 	top: -5px;
 	font-size: 15px;
 }
 
-.oben .input-div.focus > .i > i{
+.input-div.focus > .i > i{
 	color: purple;
 }
 
-.oben .input-div > div > input{
+.input-div > div > input{
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -135,11 +143,11 @@ body{
 	font-family: 'Montserrat', sans-serif;
 }
 
-.oben .input-div.pass{
+.input-div.pass{
 	margin-bottom: 4px;
 }
 
-.oben a{
+a{
 	display: block;
 	text-align: right;
 	text-decoration: none;
@@ -148,11 +156,11 @@ body{
 	transition: .3s;
 }
 
-.oben a:hover{
+a:hover{
 	color: purple;
 }
 
-.oben .btn{
+.btn{
 	 display: inline-block;
     margin-top: 1rem;
     border-radius: 5rem;
@@ -162,29 +170,8 @@ body{
     cursor: pointer;
     font-size: 1.7rem;
 }
-.oben .btn:hover{
+.btn:hover{
 	background: purple;
-}
-
-.mitte {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.details{
-  background: #f6f6f6;
-  padding: 10px 20px;
-  border-radius: 7px;
-  margin-top: 20px;
-  font-family: "Montserrat";
-  font-size: 14px;
-  letter-spacing: 1px;
-  cursor: pointer;
-}
-
-.details summary{
-  outline: none;
 }
 
 
