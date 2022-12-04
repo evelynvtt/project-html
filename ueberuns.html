@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- funktiioniert hier  -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,42 +13,53 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style_turtle.css">
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("burgerlinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
 
 <!-- header section starts  -->
 
 <header>
+<div class="abc">
 
-    <input type="checkbox" name="" id="toggler">
-    <label for="toggler" class="fas fa-bars"></label>
-
-
-
+<img id="logo" src="images/image.png" alt="">
+    <a href="index.html" class="logo"></a>
 
 
-<img src="images/turtle.png" alt="" height="70px" width="110px">
-    <a href="index.html" class="logo">Antivirus & Internet <br> Security<span>.</span></a>
-    <nav class="navbar">
-        <a href="index.html">Startseite</a>
-        <a href="ueberuns.html">Über Uns</a>
-        <a href="Produkt.html">Produkte</a>
-        <a href="FAQS.html">FAQ</a>
-        <a href="kontakt.html">Kontakt</a>
+          <div id="burgerlinks">
+        <ul id="liste">
+      <li id="liste">  <a href="index.html">Startseite</a> </li>
+      <li>  <a href="ueberuns.html">Über Uns</a></li>
+        <li><a href="Produkt.html">Produkte</a></li>
+    <li>    <a href="FAQS.html">FAQ</a></li>
+      <li>  <a href="kontakt.html">Kontakt</a></li>
+      </ul>
+         </div>
+       </div>
+<div class="xyz">
 
-    </nav>
+        <a href="Loginpage.html"><img id="login" src="images/login_logo.jpg"></a>
+        <a href="javascript:void(0);" onclick="myFunction()"><img id="burger" src="images/menu.png" alt="Auswahlmenü"></a>
 
-    <div class="icons">
-        <a href="index.html" class="fas fa-shopping-cart"></a>
-        <a href="Loginpage.html" class="fas fa-user"></a>
-    </div>
+</div>
 
 </header>
 
 <!-- header section ends -->
 
 <!-- home section starts  -->
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
