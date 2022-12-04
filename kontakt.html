@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+
+<!-- funktiioniert hier  -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,44 +13,241 @@
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style_turtle.css">
-
+    <script>
+        function myFunction() {
+            var x = document.getElementById("burgerlinks");
+            if (x.style.display === "block") {
+            x.style.display = "none";
+            } else {
+            x.style.display = "block";
+            }
+        }
+    </script>
 </head>
 <body>
 
 <!-- header section starts  -->
 
 <header>
+<div class="abc">
 
-    <input type="checkbox" name="" id="toggler">
-    <label for="toggler" class="fas fa-bars"></label>
-
-
-
+<img id="logo" src="images/image.png" alt="">
+    <a href="index.html" class="logo"></a>
 
 
-<img src="images/turtle.png" alt="" height="70px" width="110px">
-    <a href="index.html" class="logo">Antivirus & Internet <br> Security<span>.</span></a>
-    <nav class="navbar">
-        <a href="index.html">Startseite</a>
-        <a href="ueberuns.html">Über Uns</a>
-        <a href="Produkt.html">Produkte</a>
-        <a href="FAQS.html">FAQ</a>
-        <a href="kontakt.html">Kontakt</a>
+          <div id="burgerlinks">
+        <ul id="liste">
+      <li id="liste">  <a href="index.html">Startseite</a> </li>
+      <li>  <a href="ueberuns.html">Über Uns</a></li>
+        <li><a href="Produkt.html">Produkte</a></li>
+    <li>    <a href="FAQS.html">FAQ</a></li>
+      <li>  <a href="kontakt.html">Kontakt</a></li>
+      </ul>
+         </div>
+       </div>
+<div class="xyz">
 
-    </nav>
+        <a href="Loginpage.html"><img id="login" src="images/login_logo.jpg"></a>
+        <a href="javascript:void(0);" onclick="myFunction()"><img id="burger" src="images/menu.png" alt="Auswahlmenü"></a>
 
-    <div class="icons">
-        <a href="index.html" class="fas fa-shopping-cart"></a>
-        <a href="Loginpage.html" class="fas fa-user"></a>
-    </div>
+</div>
 
 </header>
 
-<br>
-<br>
-<br>
-<br>
-<br>
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h4>Antivirus & Internet Security</h4>
+        <span> bliblablubb blabla blabla lila krass krass</span>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laborum ut minus corrupti dolorum dolore assumenda iste voluptate dolorem pariatur.</p>
+        <a href="Produkt.html" class="btn">Jetzt Einkaufen</a>
+    </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <h1 class="heading"> <span> Über </span> Uns </h1>
+
+    <div class="row">
+
+        <div class="video-container">
+            <video src="images/main-vid.mp4" loop autoplay muted></video>
+            <h3>beste antivirus software</h3>
+        </div>
+
+        <div class="content">
+            <h3>Wieso uns wählen?</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem cumque sit nemo pariatur corporis perspiciatis aspernatur a ullam repudiandae autem asperiores quibusdam omnis commodi alias repellat illum, unde optio temporibus.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium ea est commodi incidunt magni quia molestias perspiciatis, unde repudiandae quidem.</p>
+            <a href="ueberuns.html" class="btn">Mehr Erfahren</a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- icons section starts  -->
+
+<section class="icons-container">
+
+    <div class="icons">
+        <img src="images/icon-1.png" alt="">
+        <div class="info">
+            <h3>Kostenlose Lieferung</h3>
+            <span>Auf alle Bestellungen</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-2.png" alt="">
+        <div class="info">
+            <h3>31 Tage kostenlos testen</h3>
+            <span>Geldzurückgarantie</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-3.png" alt="">
+        <div class="info">
+            <h3>Rabatte & Geschenke</h3>
+            <span>Auf jede Lizenz</span>
+        </div>
+    </div>
+
+    <div class="icons">
+        <img src="images/icon-4.png" alt="">
+        <div class="info">
+            <h3>Sichere Bezahlung</h3>
+            <span>Paypal, Kreditkarte</span>
+        </div>
+    </div>
+</section>
+<section>
+
+<h1 class="heading"> <span> Unsere </span> Produkte </h1>
+
+</section>
+
+
+<section class="produkt">
+    <div class="galleryp">
+        <div class="contentp">
+<h3>Basic</h3>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+  <h6>Preis</h6>
+<ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star"></i></li>
+</ul>
+  <button class="buy-1">Jetzt Kaufen</button>
+        </div>
+
+            <div class="contentp">
+<h3>Pro</h3>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+  <h6>Preis</h6>
+<ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star"></i></li>
+  <li><i class="fa fa-star"></i></li>
+</ul>
+<button class="buy-2">Jetzt Kaufen</button>
+        </div>
+
+                  <div class="contentp">
+<h3>Expert</h3>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+  <h6>Preis</h6>
+<ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star"></i></li>
+</ul>
+<button class="buy-3">Jetzt Kaufen</button>
+        </div>
+        </div>
+            <div class="gallery2p">
+              <div class="content2p">
+
+
+
+<h3>Basic</h3>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+  <h6>Preis</h6>
+<ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star"></i></li>
+  <li><i class="fa fa-star"></i></li>
+</ul>
+<button class="buy-5">Jetzt Kaufen</button>
+        </div>
+
+                  <div class="content2p">
+<h3>Pro</h3>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+  <h6>Preis</h6>
+<ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star"></i></li>
+</ul>
+<button class="buy-6">Jetzt Kaufen</button>
+        </div>
+
+
+                  <div class="content2p">
+<h3>Expert</h3>
+  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At</p>
+  <h6>Preis</h6>
+<ul>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star checked"></i></li>
+  <li><i class="fa fa-star"></i></li>
+</ul>
+  <button class="buy-6">Jetzt Kaufen</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</section>
+
 
 <section class="contact" id="contact">
 <br>
@@ -75,7 +274,16 @@
 <br>
 <br>
 
+<!-- contact section ends -->
 
+
+
+
+
+</body>
+
+
+<!-- footer section starts  -->
 
 <section class="footer">
 
@@ -91,7 +299,7 @@
         </div>
 
         <div class="box">
-            <h3>Unser Partner</h3>
+            <h3>Unsere Partner</h3>
             <a href="https://sea-shepherd.de/">Seasheperd</a>
             <a href="https://www.stiftung-meeresschutz.org/foerderung/meeresschildkroeten/">Stiftung Meeresschutz</a>
             <a href="https://sana-mare.org/">Sana Mare</a>
@@ -127,8 +335,7 @@
 
 </section>
 
+<!-- footer section ends -->
 
 
-
-</body>
 </html>
