@@ -12,6 +12,33 @@ body {
   font-family: Montserrat;
 }
 
+p {text-align: left;
+  color: #000D00;
+  font-size: 15px;
+  padding-top: 0 8px;
+}
+
+p1 {text-align: left;
+  color: #696969;
+  font-size: 16px;
+  padding-top: 0 8px;
+}
+
+h1  {
+	text-align: left;
+	font-size: 30px;
+	margin: 0;
+	padding-top: 10px;
+}
+
+h2  {
+	text-align: left;
+	font-size: 18px;
+  color: #000D00;
+	margin: 0;
+	padding-top: 10px;
+}
+
 
 header{
     position: fixed;
